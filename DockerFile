@@ -1,4 +1,4 @@
 FROM openjdk:8
 EXPOSE 8080
-ADD target/springboot-images-new.jar demo88.jar
+ADD target/cicdtest cicdtest
 ENTRYPOINT [ "java","-jar","cicdtest" ]
