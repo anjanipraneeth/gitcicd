@@ -1,4 +1,4 @@
-FROM openjdk:8
+FROM openjdk:17
 EXPOSE 8080
-ADD target/cicdtest cicdtest
-ENTRYPOINT [ "java","-jar","cicdtest" ]
+ADD target/cicdtest.jar cicdtest.jar
+ENTRYPOINT [ "java","-jar","cicdtest.jar" ]
